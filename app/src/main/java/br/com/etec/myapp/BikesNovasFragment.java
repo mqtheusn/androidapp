@@ -32,16 +32,16 @@ public class BikesNovasFragment extends Fragment {
 
         // carregando os objetos na lista
         lstBikenova = new ArrayList<>();
-        lstBikenova.add(new Bikenova("bike1", R.drawable.bike1));
-        lstBikenova.add(new Bikenova("bike2", R.drawable.bike2));
-        lstBikenova.add(new Bikenova("bike3", R.drawable.bike3));
-        lstBikenova.add(new Bikenova("bike4", R.drawable.bike4));
-        lstBikenova.add(new Bikenova("bike5", R.drawable.bike5));
-        lstBikenova.add(new Bikenova("bike6", R.drawable.bike6));
-        lstBikenova.add(new Bikenova("bike7", R.drawable.bike7));
-        lstBikenova.add(new Bikenova("bike8", R.drawable.bike8));
-        lstBikenova.add(new Bikenova("bike9", R.drawable.bike9));
-        lstBikenova.add(new Bikenova("bike10", R.drawable.bike10));
+        lstBikenova.add(new Bikenova("bike1", R.drawable.bikea));
+        lstBikenova.add(new Bikenova("bike2", R.drawable.bikee));
+        lstBikenova.add(new Bikenova("bike3", R.drawable.bikeee));
+        lstBikenova.add(new Bikenova("bike4", R.drawable.bikeeee));
+        lstBikenova.add(new Bikenova("bike5", R.drawable.bikeeeee));
+        lstBikenova.add(new Bikenova("bike6", R.drawable.bikeeeeee));
+        lstBikenova.add(new Bikenova("bike7", R.drawable.bikeeeeeee));
+        lstBikenova.add(new Bikenova("bike8", R.drawable.bikeeeeeeee));
+        lstBikenova.add(new Bikenova("bike9", R.drawable.bikeeeeeeeee));
+        lstBikenova.add(new Bikenova("bike10", R.drawable.bikeeeeeeeeee));
 
         RecyclerAdapterBikeNova adapterBikeNova = new RecyclerAdapterBikeNova(getContext(), lstBikenova);
 
