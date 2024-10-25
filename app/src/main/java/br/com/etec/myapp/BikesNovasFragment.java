@@ -32,16 +32,26 @@ public class BikesNovasFragment extends Fragment {
 
         // carregando os objetos na lista
         lstmodelos = new ArrayList<>();
-        lstmodelos.add(new Bikenova("bike1", R.drawable.model));
-        lstmodelos.add(new Bikenova("bike2", R.drawable.bikee));
-        lstmodelos.add(new Bikenova("bike3", R.drawable.bikeee));
-        lstmodelos.add(new Bikenova("bike4", R.drawable.bikeeee));
-        lstmodelos.add(new Bikenova("bike5", R.drawable.bikeeeee));
-        lstmodelos.add(new Bikenova("bike6", R.drawable.bikeeeeee));
-        lstmodelos.add(new Bikenova("bike7", R.drawable.bikeeeeeee));
-        lstmodelos.add(new Bikenova("bike8", R.drawable.bikeeeeeeee));
-        lstmodelos.add(new Bikenova("bike9", R.drawable.bikeeeeeeeee));
-        lstmodelos.add(new Bikenova("bike10", R.drawable.bikeeeeeeeeee));
+        lstmodelos.add(new Bikenova("m1", R.drawable.modelum));
+        lstmodelos.add(new Bikenova("m2", R.drawable.modeldois));
+        lstmodelos.add(new Bikenova("m3", R.drawable.modeltres));
+        lstmodelos.add(new Bikenova("m4", R.drawable.modelquatro));
+        lstmodelos.add(new Bikenova("m5", R.drawable.modelcinco));
+        lstmodelos.add(new Bikenova("m6", R.drawable.modelseis));
+        lstmodelos.add(new Bikenova("m7", R.drawable.modelsete));
+        lstmodelos.add(new Bikenova("m8", R.drawable.modeloito));
+        lstmodelos.add(new Bikenova("m9", R.drawable.modelnove));
+        lstmodelos.add(new Bikenova("m10", R.drawable.modeldez));
+        lstmodelos.add(new Bikenova("m11", R.drawable.modelonze));
+        lstmodelos.add(new Bikenova("m12", R.drawable.modeldouze));
+        lstmodelos.add(new Bikenova("m13", R.drawable.modeltreze));
+        lstmodelos.add(new Bikenova("m14", R.drawable.modelquartoze));
+        lstmodelos.add(new Bikenova("m15", R.drawable.modelquinze));
+        lstmodelos.add(new Bikenova("m16", R.drawable.modeldezesseis));
+        lstmodelos.add(new Bikenova("m17", R.drawable.modeldezete));
+        lstmodelos.add(new Bikenova("m18", R.drawable.modeldezoite));
+        lstmodelos.add(new Bikenova("m19", R.drawable.modeldezenove));
+        lstmodelos.add(new Bikenova("m20", R.drawable.modelvinte));
 
         RecyclerAdapterBikeNova adapterBikeNova = new RecyclerAdapterBikeNova(getContext(), lstmodelos);
 
