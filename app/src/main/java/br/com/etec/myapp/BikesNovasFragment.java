@@ -16,8 +16,8 @@ import java.util.List;
 
 public class BikesNovasFragment extends Fragment {
 
-    private List<Bikenova> lstBikenova;
-    RecyclerView idRecBikesNovas;
+    private List<Bikenova> lstmodelos;
+    RecyclerView idmodelos;
 
 
     @Override
@@ -25,28 +25,28 @@ public class BikesNovasFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragmen1
 
-        View view = inflater.inflate(R.layout.fragment_bikes_novas, container, false);
+        View view = inflater.inflate(R.layout.fragment_modelos, container, false);
 
 
-        idRecBikesNovas = view.findViewById(R.id.idRecBikesNovas);
+        idmodelos = view.findViewById(R.id.idmenumodelos);
 
         // carregando os objetos na lista
-        lstBikenova = new ArrayList<>();
-        lstBikenova.add(new Bikenova("bike1", R.drawable.bikea));
-        lstBikenova.add(new Bikenova("bike2", R.drawable.bikee));
-        lstBikenova.add(new Bikenova("bike3", R.drawable.bikeee));
-        lstBikenova.add(new Bikenova("bike4", R.drawable.bikeeee));
-        lstBikenova.add(new Bikenova("bike5", R.drawable.bikeeeee));
-        lstBikenova.add(new Bikenova("bike6", R.drawable.bikeeeeee));
-        lstBikenova.add(new Bikenova("bike7", R.drawable.bikeeeeeee));
-        lstBikenova.add(new Bikenova("bike8", R.drawable.bikeeeeeeee));
-        lstBikenova.add(new Bikenova("bike9", R.drawable.bikeeeeeeeee));
-        lstBikenova.add(new Bikenova("bike10", R.drawable.bikeeeeeeeeee));
+        lstmodelos = new ArrayList<>();
+        lstmodelos.add(new Bikenova("bike1", R.drawable.model));
+        lstmodelos.add(new Bikenova("bike2", R.drawable.bikee));
+        lstmodelos.add(new Bikenova("bike3", R.drawable.bikeee));
+        lstmodelos.add(new Bikenova("bike4", R.drawable.bikeeee));
+        lstmodelos.add(new Bikenova("bike5", R.drawable.bikeeeee));
+        lstmodelos.add(new Bikenova("bike6", R.drawable.bikeeeeee));
+        lstmodelos.add(new Bikenova("bike7", R.drawable.bikeeeeeee));
+        lstmodelos.add(new Bikenova("bike8", R.drawable.bikeeeeeeee));
+        lstmodelos.add(new Bikenova("bike9", R.drawable.bikeeeeeeeee));
+        lstmodelos.add(new Bikenova("bike10", R.drawable.bikeeeeeeeeee));
 
-        RecyclerAdapterBikeNova adapterBikeNova = new RecyclerAdapterBikeNova(getContext(), lstBikenova);
+        RecyclerAdapterBikeNova adapterBikeNova = new RecyclerAdapterBikeNova(getContext(), lstmodelos);
 
-        idRecBikesNovas.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        idRecBikesNovas.setAdapter(adapterBikeNova);
+        idmodelos.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        idmodelos.setAdapter(adapterBikeNova);
         return view;
     }
 }

@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.core.widget.TextViewOnReceiveContentListener;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -18,12 +17,12 @@ public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapte
 
     //criando variaveis globais para a lista e o contexto
     private Context context;
-    private List<Bikenova> lstBikenova;
+    private List<Bikenova> lstmodelo;
 
     //criando construtor
     public RecyclerAdapterBikeNova(Context context, List<Bikenova> lstBikenova) {
         this.context = context;
-        this.lstBikenova = lstBikenova;
+        this.lstmodelo = lstBikenova;
     }
 
     @NonNull
@@ -37,14 +36,14 @@ public class RecyclerAdapterBikeNova extends RecyclerView.Adapter<RecyclerAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-    holder.idModeloTituloBikeNova.setText(lstBikenova.get(position).getTitulo());
-    holder.idModeloImagemBikeNova.setImageResource(lstBikenova.get(position).getImagem());
+    holder.idModeloTituloBikeNova.setText(lstmodelo.get(position).getTitulo());
+    holder.idModeloImagemBikeNova.setImageResource(lstmodelo.get(position).getImagem());
 
     }
 
     @Override
     public int getItemCount() {
-        return lstBikenova.size();
+        return lstmodelo.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

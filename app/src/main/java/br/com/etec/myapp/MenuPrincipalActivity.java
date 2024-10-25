@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MenuPrincipalActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView bikes, acessorios, manutencao, dicas, locais, eventos;
+    CardView modelos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,44 +26,14 @@ public class MenuPrincipalActivity extends AppCompatActivity implements View.OnC
             return insets;
         });
 
-        bikes = findViewById(R.id.menuBike);
-        acessorios = findViewById(R.id.menuAcessorios);
-        manutencao = findViewById(R.id.menuManutencao);
-        dicas = findViewById(R.id.menuDicas);
-        eventos = findViewById(R.id.menuEventos);
-        locais = findViewById(R.id.menuLocais);
+        modelos = findViewById(R.id.idmenumodelos);
+        modelos.setOnClickListener(this);
 
-        bikes.setOnClickListener(this);
-        acessorios.setOnClickListener(this);
-        manutencao.setOnClickListener(this);
-        dicas.setOnClickListener(this);
-        eventos.setOnClickListener(this);
-        locais.setOnClickListener(this);
     }
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.menuBike) {
+        if (view.getId() == R.id.idmenumodelos) {
             startActivity(new Intent(getApplicationContext(), BikesActivity.class));
-            finish();
-        }
-        if (view.getId() == R.id.menuEventos) {
-            startActivity(new Intent(getApplicationContext(), EventosActivity.class));
-            finish();
-        }
-        if (view.getId() == R.id.menuDicas) {
-            startActivity(new Intent(getApplicationContext(), DicasActivity.class));
-            finish();
-        }
-        if (view.getId() == R.id.menuLocais) {
-            startActivity(new Intent(getApplicationContext(), LocaisActivity.class));
-            finish();
-        }
-        if (view.getId() == R.id.menuAcessorios) {
-            startActivity(new Intent(getApplicationContext(), AcessoriosActivity.class));
-            finish();
-        }
-        if (view.getId() == R.id.menuManutencao) {
-            startActivity(new Intent(getApplicationContext(), ManutencaoActivity.class));
             finish();
         }
 

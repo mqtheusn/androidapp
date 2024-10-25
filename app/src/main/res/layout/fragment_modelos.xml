@@ -7,7 +7,7 @@
     tools:context=".BikesNovasFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRecBikesNovas"
+        android:id="@+id/idmenumodelos"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

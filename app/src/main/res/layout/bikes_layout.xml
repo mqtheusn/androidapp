@@ -14,11 +14,12 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
+
             android:id="@+id/idToolBarBike"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/baseline_arrow_back"
-            app:title="Bike"
+            app:title="Modelos"
             app:titleCentered="true"
             app:titleTextColor="#E91E63" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -33,19 +34,19 @@
             android:id="@+id/idBikeNova"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Novas" />
+            android:text="StreetStyle" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/idBikeUsadas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usadas" />
+            android:text="Punk" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/idBikeDoacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Doação" />
+            android:text="TechWear" />
 
     </com.google.android.material.tabs.TabLayout>
 
